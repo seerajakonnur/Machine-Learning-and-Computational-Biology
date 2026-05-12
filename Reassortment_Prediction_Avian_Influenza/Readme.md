@@ -45,11 +45,19 @@ Initial model development focused on H5N1 clade 2.3.4.4b sequences from the Unit
 
 #### Training Dataset
 
-| Dataset component | Clade / background | Genotype(s) | Class | Number of sequences | Use |
+| Dataset component | Subtype and Clade | Genotype(s) | Class | Number of sequences | Use |
 |---|---|---|---|---:|---|
 | Training non-reassortants | H5N1 clade 2.3.4.4b | A1 | Non-reassortant | 120 | Training |
 | Training reassortants | H5N1 clade 2.3.4.4b | B1.1, B1.2, B2, B3.1, B3.2, B4, B5 | Reassortant | 119 | Training |
 | **Total** | — | — | — | **239** | Training |
+
+#### Test Dataset (Same Study)
+
+| Dataset component | Source relationship | Clade / background | Genotype(s) | Class | Number of sequences | Use |
+|---|---|---|---|---|---:|---|
+| Same-study non-reassortants | Same published study as training data, not used in training | H5N1 clade 2.3.4.4b | A2, A3 | Non-reassortant | 25 | Test |
+| Same-study reassortants | Same published study as training data, not used in training | H5N1 clade 2.3.4.4b | Minor reassortant genotypes | Reassortant | 30 | Test |
+| **Total** | — | — | — | — | **55** | Test |
 
 ### Cross-Clade Evaluation Dataset
 
