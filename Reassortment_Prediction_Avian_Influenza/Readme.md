@@ -7,16 +7,13 @@ In addition to classification, a Graph Attention Network (GAT) is used to model 
 
 This work was accepted at the NeurIPS 2025 2nd Workshop on Foundation Models for Life Sciences (FM4LS).
 
-
-🚧 **Project Status:** Under active development.  
-Expect frequent updates and changes.
 ![Alt text](assets/to_use_reassortment_image.png)
 
-## Objective
-Influenza A virus (IAV) poses a persistent global threat due to its ability to evolve
-rapidly through reassortment. This project presents a computational framework that inte-
-grates DNABERT-2, a transformer-based foundation model for genomic sequences,
-with machine learning and genetic algorithms to predict reassortment events.
+## Why Reassortment Prediction Matters
+
+Influenza A viruses have segmented genomes, which allows whole genome segments to be exchanged when two viruses co-infect the same host. This process, known as reassortment, gives the virus the ability to evolve rapidly and generate novel viral genotypes with altered host range, transmissibility, or pandemic potential.
+
+Early identification of reassortment signals is important for genomic surveillance, outbreak preparedness, and prioritizing high-risk viral combinations for downstream investigation.
 
 ## Framework
 This work presents a computational pipeline designed to identify and assess
