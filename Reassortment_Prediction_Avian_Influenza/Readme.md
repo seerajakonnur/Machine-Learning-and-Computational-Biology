@@ -73,20 +73,6 @@ Initial model development focused on H5N1 clade 2.3.4.4b sequences from the Unit
 | **Total reassortants** | — | — | Reassortant | **5** | — |
 | **Total** | — | — | — | **22** | External-study test collection |
 
-
-To assess generalization beyond the original training clade, an independent cross-clade dataset was curated from multiple published studies after the NeurIPS submission. This dataset was designed to include H5N1 reassortant and non-reassortant sequences from clades outside the primary 2.3.4.4b training setting.
-
-The cross-clade evaluation dataset included:
-
-| Source / group | Type | Clade / genotype details | Number of sequences |
-|---|---|---|---:|
-| Alaska 2022 dataset | Non-reassortant | A4 genotype, clade 2.3.4.4b | 6 |
-| Bangladesh H5N1 clade 2.3.2.1a study | Non-reassortant | Clade 2.3.2.1a | 1 |
-| Vietnam clade distribution study | Non-reassortant | VN3, clade 1.1.2 | 7 |
-| Vietnam clade distribution study | Non-reassortant | VN12, clade 2.3.2.1a | 2 |
-| Vietnam clade distribution study | Non-reassortant | VN45, clade 2.3.2.1b | 1 |
-| Bangladesh H5N1 study | Reassortant | H5N1 clade 2.3.2.1a reassorted with low-pathogenic Eurasian-lineage avian influenza A viruses | 5 |
-
 Overall, the cross-clade evaluation set contained **17 non-reassortant sequences** and **5 reassortant sequences**. Only sequences with complete CDS information were included where possible, and care was taken to avoid overlap with training data.
 
 
