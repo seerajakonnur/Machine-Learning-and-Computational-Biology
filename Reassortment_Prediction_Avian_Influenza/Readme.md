@@ -7,13 +7,13 @@ Accepted at NeurIPS 2025 Workshop on Foundation Models for Life Sciences (FM4LS)
 Expect frequent updates and changes.
 ![Alt text](assets/to_use_reassortment_image.png)
 
-## Background and Objective
+## Objective
 Influenza A virus (IAV) poses a persistent global threat due to its ability to evolve
 rapidly through reassortment. This project presents a computational framework that inte-
 grates DNABERT-2, a transformer-based foundation model for genomic sequences,
 with machine learning and genetic algorithms to predict reassortment events.
 
-## Concept and Framework
+## Framework
 This work presents a computational pipeline designed to identify and assess
 influenza virus reassortment potential from clinical or environmental surveillance data. 
 
@@ -27,6 +27,13 @@ influenza virus reassortment potential from clinical or environmental surveillan
 → Genetic Algorithm candidate generation  
 → Risk-ranked reassortant candidates  
 
+## Model Components
+
+### Primary prediction model
+The main predictive model is a Random Forest classifier trained on concatenated DNABERT-2 segment embeddings.
+
+### Interaction analysis module
+A Graph Attention Network (GAT) is used as an exploratory interaction probe. Each virus genome is represented as an 8-node graph, where nodes correspond to PB2, PB1, PA, HA, NP, NA, MP, and NS. Attention weights are used to examine candidate segment–segment interaction patterns associated with reassortment.
 
 ### * Feature extraction using foundation model
 Genomic sequences (influenza RNA sequences across all 8 segments) are processed segment-wise through DNABERT2 to generate embeddings. Embeddings are created for each segment because reassortment occurs at the segment level, where whole genome segments are exchanged between two influenza viruses.
