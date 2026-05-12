@@ -35,16 +35,25 @@ Beyond the primary Random Forest classifier, a Graph Attention Network (GAT) is 
 
 Influenza virus reassortment is not entirely random; it is shaped by factors such as host species, viral subtypes, and compatible segment combinations. The goal is to simulate reassortment by generating multiple potential reassortant genomes and evaluating them using the trained classifier to determine whether they qualify as reassortants or non-reassortants. 
 
+## Dataset
 
-## Pipeline
+Initial model development used H5N1 clade 2.3.4.4b sequences from the United States 2021–2022 outbreak period, which was marked by extensive reassortment.
 
-→ Take influenza sample genomic data (fasta sequences)
-→ Segment-wise DNABERT-2 embeddings  
-→ Concatenated genome representation  
-→ Random Forest reassortment classifier  
-→ GAT : Segment-level DNABERT embeddings → Graph Attention Network → attention-guided analysis of segment compatibility underlying reassortment
-→ Genetic Algorithm candidate generation  
-→ Risk-ranked reassortant candidates  
+The dataset includes:
+
+- Non-reassortant genotypes: A1, A2, A3
+- Reassortant genotypes: B1.1, B1.2, B2, B3.1, B3.2, B4, B5
+- Minor reassortant genotypes reserved for testing
+
+For model development:
+
+| Dataset | Composition |
+|---|---|
+| Training non-reassortants | 120 genotype A1 sequences |
+| Training reassortants | 119 sequences from B1.1, B1.2, B2, B3.1, B3.2, B4, B5 |
+| Same-clade test non-reassortants | 25 sequences from A2 and A3 |
+| Same-clade test reassortants | 30 minor reassortant sequences |
+| Cross-clade test | Independent reassortant and non-reassortant sequences from additional clades |
 
 
 
