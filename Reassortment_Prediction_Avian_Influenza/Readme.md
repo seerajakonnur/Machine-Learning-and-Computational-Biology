@@ -59,6 +59,14 @@ Initial model development focused on H5N1 clade 2.3.4.4b sequences from the Unit
 
 This setup enabled evaluation of whether the model could distinguish reassortant from non-reassortant genomes within the same broad clade background.
 
+### Model Development Dataset
+
+| Dataset component | Clade / background | Genotype(s) | Class | Number of sequences | Use |
+|---|---|---|---|---:|---|
+| Training non-reassortants | H5N1 clade 2.3.4.4b | A1 | Non-reassortant | 120 | Training |
+| Training reassortants | H5N1 clade 2.3.4.4b | B1.1, B1.2, B2, B3.1, B3.2, B4, B5 | Reassortant | 119 | Training |
+| **Total** | — | — | — | **239** | Training |
+
 ### Cross-Clade Evaluation Dataset
 
 To assess generalization beyond the original training clade, an independent cross-clade dataset was curated from multiple published studies after the NeurIPS submission. This dataset was designed to include H5N1 reassortant and non-reassortant sequences from clades outside the primary 2.3.4.4b training setting.
