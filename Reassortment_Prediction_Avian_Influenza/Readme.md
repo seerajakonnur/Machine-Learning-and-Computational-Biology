@@ -57,6 +57,3 @@ For model development:
 
 
 
-## Data
-For generating the initial results, H5N1 clade 2.3.4.4b sequences from the United States (2021–2022)—a period marked by major reassortment events were used. This dataset includes both non-reassortant and reassortant genotypes circulating during this time. Specifically, it contains non-reassortant genotypes such as A1, A2, and A3, along with reassortant genotypes including B1.1, B1.2, B2, B3.1, B3.2, B4, B5, and several minor reassortants that represent subsets of these major groups.
-For model development, 120 non-reassortant sequences from genotype A1 were selected as the negative training set, and 119 reassortant sequences spanning genotypes B1.1, B1.2, B2, B3.1, B3.2, B4, and B5 were used as the positive training set, preserving proportional representation across classes. To evaluate model generalization on unseen data, non-reassortant genotypes A2 and A3 (25 sequences combined) were reserved exclusively for testing, while 30 minor reassortants served as the reassortant test set. 
