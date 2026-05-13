@@ -73,7 +73,7 @@ Initial model development focused on H5N1 clade 2.3.4.4b sequences from the Unit
 | **Total reassortants** | — | — | Reassortant | **5** | — |
 | **Total** | — | — | — | **22** | External-study test collection |
 
-Overall, the cross-clade evaluation set contained **17 non-reassortant sequences** and **5 reassortant sequences**. Only sequences with complete CDS information were included where possible, and care was taken to avoid overlap with training data.
+Overall, the external evaluation set contained **17 non-reassortant sequences** and **5 reassortant sequences**. Curating this dataset was challenging because publicly available whole-genome influenza sequences are not always clearly annotated as reassortant or non-reassortant. Only sequences with complete CDS information were included, and care was taken to avoid overlap with the training data.
 
 ## Results
 
@@ -83,8 +83,8 @@ A detailed summary of outputs, figures, and prediction files is available in the
 |---|---|
 | DNABERT-2 embeddings | Dimensionality reduction showed clear structure separating reassortant and non-reassortant genomes. |
 | Random Forest classifier | Achieved strong performance on unseen same-clade test data. |
-| Cross-clade evaluation | RF retained useful generalization on independent clade data, with MCC ≈ 0.72. |
-| Genetic algorithm | Recovered known reassortant genotype patterns from outbreak data. |
-| GAT segment interaction analysis | Reassortant samples showed stronger and more concentrated attention patterns, particularly involving NP-centered interactions. |
+| External study dataset| RF retained useful generalization on external study data (other clade), with MCC ≈ 0.72. |
+| Genetic algorithm | Recovered known reassortant genotype patterns from the United States 2021–2022 outbreak data. |
+| GAT segment interaction analysis | GAT attention maps captured distinct segment–segment interaction patterns between reassortant and non-reassortant genomes. Reassortant samples showed stronger and more concentrated interaction signals, with NP emerging as a central segment involved in multiple high-attention relationships. This suggests that the model is capturing NP-associated compatibility shifts that may be important in reassortment. |
 
 
