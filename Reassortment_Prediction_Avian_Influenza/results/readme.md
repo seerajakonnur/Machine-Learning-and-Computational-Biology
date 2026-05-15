@@ -31,10 +31,15 @@ The Random Forest classifier achieved strong performance on unseen same-study te
 
 ## External-Study Evaluation
 
-The RF classifier was also evaluated on an independently curated external-study dataset containing 17 non-reassortants and 5 reassortants including different clades
+The Random Forest classifier was also evaluated on an independently curated external-study dataset containing **17 non-reassortants** and **5 reassortants** from multiple published H5N1 studies. This evaluation tested how well the model generalized beyond the original same-study test setting.
 
-| Metric | Value |
+| Metric | Result |
 |---|---:|
-| Accuracy | 0.8636 |
-| Balanced Accuracy | 0.9118 |
+| Test samples | 22 |
+| Non-reassortants correctly identified | 14 / 17 |
+| Reassortants correctly identified | 5 / 5 |
+| Accuracy | 86.36% |
+| Balanced Accuracy | 91.18% |
 | MCC | 0.7174 |
+
+The model correctly identified all reassortant samples in this external-study test set, while 3 non-reassortant samples were misclassified as reassortants. Despite the small and imbalanced dataset, the MCC of 0.7174 indicates useful generalization across independently sourced sequences.
