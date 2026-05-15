@@ -28,3 +28,13 @@ The Random Forest classifier achieved strong performance on unseen same-study te
 | Non-reassortants correctly identified | 25 / 25 |
 | Accuracy | 100% |
 | Mean prediction confidence | 0.96 |
+
+## External-Study Evaluation
+
+The RF classifier was also evaluated on an independently curated external-study dataset containing 17 non-reassortants and 5 reassortants including different clades
+
+| Metric | Value |
+|---|---:|
+| Accuracy | 0.8636 |
+| Balanced Accuracy | 0.9118 |
+| MCC | 0.7174 |
