@@ -50,6 +50,7 @@ This PCA plot visualizes DNABERT-2 embeddings using three biological metadata la
 
 The separation of external clades from the primary 2.3.4.4b group, together with genotype-level clustering within the same embedding space, suggests that DNABERT-2 segment-specific embeddings encode meaningful evolutionary and reassortment-associated variation.
 
+![t-SNE visualization](../assets/pca_grouped_heirarchical.png)
 
 
 ## Genetic Algorithm Results
