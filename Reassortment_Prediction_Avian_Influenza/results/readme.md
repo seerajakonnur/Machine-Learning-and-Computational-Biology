@@ -6,6 +6,9 @@ This folder summarizes the key outputs from the reassortment prediction framewor
 
 t-SNE projection of the DNABERT-2-derived training embeddings revealed a clear separation between reassortant and non-reassortant genomes. This indicates that the segment-level genomic representations capture biologically meaningful reassortment-associated signals, even without task-specific fine-tuning.
 
+![t-SNE visualization](../assets/influenza_clustering_segment_specific_tsne.png)
+
+
 ## Random Forest Classifier
 
 The Random Forest classifier achieved strong performance on unseen same-study test data.
