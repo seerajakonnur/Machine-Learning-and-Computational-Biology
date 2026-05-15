@@ -54,3 +54,7 @@ The separation of external clades from the primary 2.3.4.4b group, together with
 
 
 ## Genetic Algorithm Results
+
+Because Influenza A contains eight independently exchangeable genome segments, the number of potential reassortant combinations increases rapidly with the number of parental viruses. The genetic algorithm (GA) module was used to prioritize biologically plausible reassortant candidates from this large combinatorial space.
+
+The GA successfully recovered known reassortant genotype patterns from outbreak data, suggesting that the framework captures biologically meaningful segment compatibility constraints. 
