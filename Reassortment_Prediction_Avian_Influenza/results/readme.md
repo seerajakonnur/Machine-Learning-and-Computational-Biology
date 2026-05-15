@@ -6,11 +6,11 @@ This folder summarizes the key outputs from the reassortment prediction framewor
 
 PCA and t-SNE were used to visualize the DNABERT-2-derived segment-specific embeddings from the training dataset.
 
-PCA provides a linear, global view of the embedding space. The PCA plot shows a clear separation between reassortant and non-reassortant genomes, indicating that the strongest directions of variation in the embeddings already capture reassortment-associated structure.
+The PCA projection shows a strong global separation between reassortant and non-reassortant genomes. Non-reassortants form a compact cluster, suggesting that genotype A1 non-reassortant genomes are relatively homogeneous in the learned embedding space. In contrast, reassortants separate into multiple visible subclusters, consistent with the presence of multiple reassortant genotypes and segment-combination patterns.
 
-t-SNE provides a nonlinear, local-neighborhood view. Compared with PCA, the t-SNE plot shows finer sub-clustering among reassortant genomes, suggesting that reassortants are not a single homogeneous group but may contain multiple genotype-specific or segment-combination-driven patterns.
+The t-SNE projection further emphasizes local neighborhood structure. Reassortant genomes remain clearly separated from non-reassortants and show distinct subclusters, supporting the idea that reassortants are not a single uniform group. Non-reassortants appear more spread out in t-SNE than in PCA, which is expected because t-SNE prioritizes local relationships and can expand compact global clusters to reveal finer-scale variation.
 
-Together, these visualizations indicate that DNABERT-2 segment-specific embeddings capture biologically meaningful genomic structure without task-specific fine-tuning: PCA highlights broad class-level separation, while t-SNE reveals local substructure within the reassortant class.
+Together, PCA and t-SNE provide complementary views: PCA highlights the broad global separation between reassortant and non-reassortant genomes, while t-SNE reveals local structure and within-class heterogeneity. The consistent class-level separation across both methods suggests that DNABERT-2 segment-specific embeddings capture biologically meaningful reassortment-associated genomic patterns without task-specific fine-tuning.
 
 ![t-SNE visualization](../assets/influenza_clustering_segment_specific_pca.png)
 
