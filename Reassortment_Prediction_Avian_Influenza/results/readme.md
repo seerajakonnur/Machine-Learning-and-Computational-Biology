@@ -82,6 +82,48 @@ The GAT-based segment interaction analysis was used to examine how segment-level
 
 Each influenza genome was represented as an 8-node graph corresponding to PB2, PB1, PA, HA, NP, NA, MP, and NS. Directed attention weights were extracted from the trained GAT model and summarized to identify high-attention segment–segment relationships. Self-loops were removed only for visualization, so the interaction graphs focus on relationships between different genome segments.
 
+### GAT Evaluation
+
+The GAT model was evaluated on the internal validation set, the same-clade test set, and the other-clade external test set. The model performed strongly within the same-clade setting but did not generalize reliably to the other-clade dataset. Therefore, the attention-derived interaction patterns are interpreted primarily within the same-clade context.
+
+#### Internal Validation Set
+
+| True / Predicted | Non-Reassortant | Reassortant |
+|---|---:|---:|
+| Non-Reassortant | 24 | 0 |
+| Reassortant | 0 | 24 |
+
+| Metric | Value |
+|---|---:|
+| Accuracy | 1.0000 |
+| MCC | 1.0000 |
+
+#### Same-Clade Test Set
+
+| True / Predicted | Non-Reassortant | Reassortant |
+|---|---:|---:|
+| Non-Reassortant | 25 | 0 |
+| Reassortant | 1 | 29 |
+
+| Metric | Value |
+|---|---:|
+| Accuracy | 0.9818 |
+| MCC | 0.9641 |
+
+#### Other-Clade External Test Set
+
+| True / Predicted | Non-Reassortant | Reassortant |
+|---|---:|---:|
+| Non-Reassortant | 17 | 0 |
+| Reassortant | 5 | 0 |
+
+| Metric | Value |
+|---|---:|
+| Accuracy | 0.7727 |
+| MCC | 0.0000 |
+
+On the other-clade external test set, the GAT model predicted all samples as non-reassortant. This suggests that the GAT learned segment-interaction patterns that were informative within the same-clade setting but did not transfer reliably across clade backgrounds in this setup. As a result, GAT attention maps are used here as same-clade segment compatibility signals rather than universal reassortment mechanisms.
+
 ### Key observations
 
 | Observation | Interpretation |
