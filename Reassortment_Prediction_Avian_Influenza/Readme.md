@@ -104,8 +104,8 @@ Directed edges represent attention-guided relationships between genome segments,
 ### GAT-Derived Segment Interaction Networks
 
 <p align="center">
-  <img src="assets/nonreassortant_from_graph_builder_3.png" width="65%" />
-  <img src="assets/reassortant_from_graph_builder_3.png" width="65%" />
+  <img src="assets/nonreassortant_from_graph_builder_3.png" width="70%" />
+  <img src="assets/reassortant_from_graph_builder_3.png" width="70%" />
 </p>
 
 <p align="center">
