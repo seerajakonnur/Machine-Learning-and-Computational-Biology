@@ -74,3 +74,4 @@ The fitness function included the following criteria:
 | Avoidance of fully parental genomes | Fully parental segment combinations were penalized to encourage true reassortant candidates rather than unchanged parental genomes. | −70 |
 
 These biologically informed constraints guided the GA toward reassortant candidates that preserve key functional relationships while still exploring novel segment combinations.
+![GA](../assets/GA.png)
