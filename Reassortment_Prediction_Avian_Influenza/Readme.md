@@ -151,9 +151,6 @@ scripts/build_graph_3.py
 Note: Some raw sequence files may not be included directly in this repository due to data size and source-specific access requirements.
 
 
-Use this:
-
-````markdown
 ## Repository Structure
 
 ```text
