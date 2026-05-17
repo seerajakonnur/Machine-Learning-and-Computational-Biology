@@ -75,3 +75,37 @@ The fitness function included the following criteria:
 
 These biologically informed constraints guided the GA toward reassortant candidates that preserve key functional relationships while still exploring novel segment combinations.
 ![GA](../assets/GA.png)
+
+## GAT-Based Segment Interaction Analysis
+
+The GAT-based segment interaction analysis was used to examine how segment-level relationships differ between reassortant and non-reassortant genomes. Unlike the Random Forest classifier, which serves as the primary prediction model, the GAT module provides an attention-guided view of segment compatibility patterns learned from the same reassortment classification task.
+
+Each influenza genome was represented as an 8-node graph corresponding to PB2, PB1, PA, HA, NP, NA, MP, and NS. Directed attention weights were extracted from the trained GAT model and summarized to identify high-attention segment–segment relationships. Self-loops were removed only for visualization, so the interaction graphs focus on relationships between different genome segments.
+
+### Key observations
+
+| Observation | Interpretation |
+|---|---|
+| Reassortant genomes showed stronger and more concentrated attention patterns. | The model relied on a smaller number of high-attention segment relationships when distinguishing reassortants. |
+| NP emerged as a central high-attention segment in reassortants. | This suggests that NP-associated compatibility shifts may be important in the learned reassortment signal. |
+| Non-reassortant genomes showed more distributed attention patterns. | This is consistent with a more stable segment constellation where no single interaction dominates strongly. |
+| Attention patterns differed between reassortant and non-reassortant networks. | The GAT captured class-associated differences in segment interaction structure beyond the flat genome-level embedding representation. |
+
+### Segment Interaction Networks
+
+<p align="center">
+  <img src="../assets/nonreassortant_from_graph_builder_3.png" width="45%" />
+  <img src="../assets/reassortant_from_graph_builder_3.png" width="45%" />
+</p>
+
+<p align="center">
+  <b>Left:</b> Non-Reassortant Interaction Network &nbsp;&nbsp;&nbsp;
+  <b>Right:</b> Reassortant Interaction Network
+</p>
+
+<p align="center">
+  Edge colors represent normalized GAT attention strength
+  (green = lower attention, red = higher attention). Directed edges indicate attention-guided relationships between genome segments.
+</p>
+
+These results suggest that reassortant genomes are associated with more concentrated segment compatibility signals, particularly involving NP-centered interactions. The attention maps are interpreted as model-derived interaction patterns rather than causal biological proof.
