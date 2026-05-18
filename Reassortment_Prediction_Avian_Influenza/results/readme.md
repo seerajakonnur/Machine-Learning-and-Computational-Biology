@@ -124,7 +124,7 @@ The GAT model was evaluated on the internal validation set, the same-clade test 
 
 The Random Forest classifier generalized better on the cross-clade evaluation set, likely because it operates on the full concatenated DNABERT-2 embedding representation and may capture broader reassortment-associated patterns across the genome. In contrast, the GAT model introduces an explicit graph structure and additional neural-network parameters to learn segment-level interaction patterns. Given the relatively small training set of 239 samples, the GAT appears to have learned a more clade-specific interaction signature rather than a fully generalizable reassortment rule.
 
-Therefore, the GAT attention maps shown below are generated from the trusted same-clade setting, including the internal training, internal validation, and same-clade test data. Cross-clade attention values are not included in these visualizations because the GAT did not generalize reliably to the cross-clade dataset.
+Therefore, the GAT attention maps shown below are generated from the same-clade setting, including the internal training, internal validation, and same-clade test data. Cross-clade attention values are not included in these visualizations because the GAT did not generalize reliably to the cross-clade dataset.
 
 ### Key Observations from GAT Attention Maps
 
