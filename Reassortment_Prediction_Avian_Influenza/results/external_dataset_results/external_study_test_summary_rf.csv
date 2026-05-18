@@ -1,0 +1,9 @@
+Metric,Value
+Model used,rf_model_optimized.pkl
+Test samples,22
+Reassortant samples,5
+Non-Reassortant samples,17
+Correct predictions,19/22
+Accuracy,0.8636
+Predicted as Reassortant,8/22
+Predicted as Non-Reassortant,14/22
