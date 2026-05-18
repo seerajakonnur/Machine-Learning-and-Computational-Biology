@@ -154,4 +154,4 @@ Therefore, the GAT attention maps shown below are generated from the same-clade 
   (green = lower attention, red = higher attention). Directed edges indicate attention-guided relationships between genome segments.
 </p>
 
-These results suggest that reassortant genomes are associated with more concentrated segment compatibility signals, particularly involving NP-centered interactions. The attention maps are interpreted as model-derived interaction patterns rather than causal biological proof.
+The GAT module adds a segment-level interpretation layer to the reassortment prediction framework. While the Random Forest classifier provides robust prediction from concatenated embeddings, GAT attention maps help identify candidate segment–segment compatibility patterns associated with reassortment. The emergence of NP- and PB2-associated interactions provides biologically interpretable hypotheses for downstream analysis, particularly around NP–polymerase compatibility and segment constellation shifts.
