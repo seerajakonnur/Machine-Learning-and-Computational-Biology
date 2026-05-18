@@ -122,7 +122,9 @@ The GAT model was evaluated on the internal validation set, the same-clade test 
 | Accuracy | 0.7727 |
 | MCC | 0.0000 |
 
-On the other-clade external test set, the GAT model predicted all samples as non-reassortant. This suggests that the GAT learned segment-interaction patterns that were informative within the same-clade setting but did not transfer reliably across clade backgrounds in this setup. As a result, GAT attention maps are used here as same-clade segment compatibility signals rather than universal reassortment mechanisms.
+RF worked better cross-clade because RF on concatenated embeddings may be capturing broader decision rules.
+But GAT adds graph attention and neural-network parameters. With only 239 training samples, it can become more specialized to the training distribution.RF generalized better; GAT learned a narrower same-clade interaction pattern. The GAT attention figures/ maps shown down are from same clade data set and do not include cros clade data.
+
 
 
 ### Key Observations from GAT Attention Maps
