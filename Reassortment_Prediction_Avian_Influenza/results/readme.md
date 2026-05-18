@@ -124,14 +124,17 @@ The GAT model was evaluated on the internal validation set, the same-clade test 
 
 On the other-clade external test set, the GAT model predicted all samples as non-reassortant. This suggests that the GAT learned segment-interaction patterns that were informative within the same-clade setting but did not transfer reliably across clade backgrounds in this setup. As a result, GAT attention maps are used here as same-clade segment compatibility signals rather than universal reassortment mechanisms.
 
-### Key observations
+
+### Key Observations from GAT Attention Maps
 
 | Observation | Interpretation |
 |---|---|
-| Reassortant genomes showed stronger attention patterns. | The model relied on a smaller number of high-attention segment relationships when distinguishing reassortants. |
-| NP emerged as a central high-attention segment in reassortants. | This suggests that NP-associated compatibility shifts may be important in the learned reassortment signal. |
-| Non-reassortant genomes showed more distributed attention patterns. | This is consistent with a more stable segment constellation where no single interaction dominates strongly. |
-| Attention patterns differed between reassortant and non-reassortant networks. | The GAT captured class-associated differences in segment interaction structure beyond the flat genome-level embedding representation. |
+| NP-related interactions were prominent in both reassortant and non-reassortant genomes. | NP appears to be an important segment in the learned interaction structure. |
+| Reassortant genomes showed stronger NP-centered attention signals compared with non-reassortants. | This suggests that NP-associated compatibility changes may be particularly informative for distinguishing reassortant genomes within the same-clade dataset. |
+| PB2-related interactions also appeared among the high-attention relationships in reassortants. | This aligns with manual inspection of the segment-combination patterns, where NP appeared frequently involved in reassortment, followed by PB2. |
+| Non-reassortant genomes also showed high-attention interactions, including NP- and HA-related patterns, but with lower overall attention intensity. | This suggests that the distinction is not simply “NP is important only in reassortants,” but rather that reassortants show stronger NP/PB2-associated interaction signals. |
+| The GAT model performed strongly on the same-clade test set but failed to identify reassortants in the other-clade test set. | This indicates that the learned attention patterns are likely specific to the same-clade training distribution and should not be interpreted as universal reassortment mechanisms without further validation across diverse clades. |
+| The attention maps are consistent with observed segment-combination patterns in the training and same-clade data. | This supports the use of GAT as a segment interaction analysis module, helping reveal biologically plausible compatibility patterns beyond the flat Random Forest embedding-based classifier. |
 
 ### Segment Interaction Networks
 
