@@ -63,7 +63,7 @@ Initial model development focused on H5N1 clade 2.3.4.4b sequences from the Unit
 
 | Source | Subtype and Clade | Genotype | Class | Number of sequences |
 |---|---|---|---|---:|
-| Alaska 2022 dataset | H5N1 clade 2.3.4.4b | A4 | Non-reassortant | 6 |
+| [Alaska 2022 dataset](https://www.usgs.gov/data/data-genomic-characterization-highly-pathogenic-h5-avian-influenza-viruses-alaska-2022) | H5N1 clade 2.3.4.4b | A4 | Non-reassortant | 6 |
 | Bangladesh H5N1 study | H5N1 clade 2.3.2.1a | Unknown | Non-reassortant | 1 | 
 | Vietnam clade distribution study | H5N1 clade 1.1.2 | VN3 | Non-reassortant | 7 | 
 | Vietnam clade distribution study | H5N1 clade 2.3.2.1a | VN12 | Non-reassortant | 2 | 
