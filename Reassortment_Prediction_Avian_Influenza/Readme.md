@@ -89,7 +89,7 @@ A detailed summary of outputs, figures, and prediction files is available in the
 | Random Forest classifier | Achieved strong performance on unseen same-clade test data. |
 | External study dataset| RF retained useful generalization on external-study data, including other-clade sequences, with MCC ≈ 0.72. Prediction confidence decreased compared with the same-clade test set, which is expected because the external-study sequences come from more divergent clade backgrounds and therefore differ more substantially from the training distribution. |
 | Genetic algorithm | Recovered known reassortant genotype patterns from the United States 2021–2022 outbreak data. |
-| GAT segment interaction analysis | GAT attention maps captured distinct segment–segment interaction patterns between reassortant and non-reassortant genomes. Reassortant samples showed stronger and more concentrated interaction signals, with NP emerging as a central segment involved in multiple high-attention relationships. This suggests that the model is capturing NP-associated compatibility shifts that may be important in reassortment. |
+| GAT segment interaction analysis | GAT attention maps captured distinct segment–segment interaction patterns between reassortant and non-reassortant genomes. Reassortant samples showed stronger interaction signals, with NP emerging as a central segment involved in multiple high-attention relationships. This suggests that the model is capturing NP-associated compatibility shifts that may be important in reassortment. |
 
 ## Segment Interaction Analysis
 
