@@ -5,7 +5,7 @@ This project presents an AI-driven framework for predicting Influenza A reassort
 
 In addition to classification, a Graph Attention Network (GAT) is used to model segment-level relationships and characterize attention-guided segment compatibility patterns associated with reassortment. A genetic algorithm module is used to explore biologically plausible reassortant candidates.
 
-This work was accepted at the NeurIPS 2025 2nd Workshop on Foundation Models for Life Sciences (FM4LS).
+This work was accepted at the NeurIPS 2025 2nd Workshop on Foundation Models for Life Sciences (FM4LS). [OpenReview Paper](https://openreview.net/forum?id=uGrHjgDbBF)
 
 ![Alt text](assets/to_use_reassortment_image.png)
 
@@ -41,7 +41,7 @@ This project uses Influenza A H5N1 genome sequences curated from published studi
 
 ### Training and Model Development Dataset
 
-Initial model development focused on H5N1 clade 2.3.4.4b sequences from the United States 2021–2022 outbreak period. The dataset includes both non-reassortant and reassortant genotypes.
+Initial model development focused on H5N1 clade 2.3.4.4b sequences from the United States 2021–2022 outbreak period. The dataset includes both non-reassortant and reassortant genotypes. [Paper](https://www.sciencedirect.com/science/article/pii/S0042682223001733)
 
 #### Training Dataset
 
