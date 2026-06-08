@@ -1,5 +1,20 @@
 
-# Enhancement of host pathogen protein - protein inetraction inetwork using recommender systems and machine learning
+# Host-Pathogen Protein Interaction Network Enhancement Using Recommender Systems and Machine Learning
+
+This project predicts novel host-pathogen protein-protein interactions by combining a probabilistic spreading algorithm with supervised machine learning on amino-acid-derived protein features.
+Starting from experimentally reported HIV-human binding interactions, the pipeline expands the interaction network, filters likely false positives, and prioritizes biologically plausible candidate interactions for downstream disease-mechanism analysis and potential drug-target discovery.
+
+## Project Motivation
+
+Host-pathogen protein-protein interactions are central to infection biology. They reveal how pathogens interact with host cellular machinery and can help identify proteins that may be useful as therapeutic targets.
+
+## Overview
+
+The workflow has three main stages:
+
+1. Network-based candidate generation using a probabilistic spreading algorithm.
+2. Biological feature extraction from protein motifs and amino acid properties.
+3. Machine learning-based filtering using a Random Forest classifier.
 
 ## Data Acquisition:
 
