@@ -37,7 +37,7 @@ The workflow has three main stages:
 
 •Then the interactions which we get after enehnacement can be cross checked and see if we they match with any other types of interactions that were there in the original data. This way we can validate the enhanced interactions.
 
-![Binding Interactions - Starting point](binding_interactions_starting_point.pdf)
+![Binding Interactions - Starting point](binding_interaction_starting_point.pdf)
 
 
 ##  Network Enhancement:
