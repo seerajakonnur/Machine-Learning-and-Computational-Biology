@@ -52,6 +52,7 @@ The workflow has three main stages:
 •	The output file includes:
    1. Pathogen protein in the first column.
    2. Predicted interacting host protein and the corresponding interaction likelihood score in the second column.
+
 •	The PSA algorithm predicts a large number of potential pathogen–host interactions. However, as the predictions are based primarily on sequence-derived features and do not explicitly account for biological context, a proportion of the predicted interactions may represent false positives.
 •	To improve confidence in the predictions, additional filtering steps were applied.
 •	First, the distribution of interaction likelihood scores was examined by plotting a histogram. Based on the observed score distribution, only interactions with scores above the 75th percentile were retained for downstream analysis. This threshold prioritizes high-confidence interactions while reducing the inclusion of lower-confidence predictions.
